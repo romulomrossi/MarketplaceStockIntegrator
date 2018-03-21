@@ -1,0 +1,8 @@
+/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/messenger/bin/Debug/netstandard2.0/messenger.deps.json
+/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/messenger/bin/Debug/netstandard2.0/messenger.dll
+/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/messenger/bin/Debug/netstandard2.0/messenger.pdb
+/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/messenger/obj/Debug/netstandard2.0/messenger.csproj.CoreCompileInputs.cache
+/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/messenger/obj/Debug/netstandard2.0/messenger.AssemblyInfoInputs.cache
+/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/messenger/obj/Debug/netstandard2.0/messenger.AssemblyInfo.cs
+/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/messenger/obj/Debug/netstandard2.0/messenger.dll
+/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/messenger/obj/Debug/netstandard2.0/messenger.pdb
