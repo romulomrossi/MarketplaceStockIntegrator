@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\Messenger\messenger.csproj" />
+    <ProjectReference Include="..\messenger\messenger.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

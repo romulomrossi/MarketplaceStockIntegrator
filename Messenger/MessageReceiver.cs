@@ -33,7 +33,6 @@ namespace Messenger
             byte[] buffer = new byte[client.ReceiveBufferSize];
             int bytesRead = nwStream.Read(buffer, 0, client.ReceiveBufferSize);
 
-        
             Message message = ByteArrayParser.Deserialize<Message>(buffer, bytesRead);
             
             nwStream.Close();

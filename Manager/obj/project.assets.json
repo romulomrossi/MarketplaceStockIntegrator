@@ -196,16 +196,6 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
-      },
-      "messenger/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/messenger.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/messenger.dll": {}
-        }
       }
     }
   },
@@ -666,17 +656,11 @@
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
-    },
-    "messenger/1.0.0": {
-      "type": "project",
-      "path": "../messenger/messenger.csproj",
-      "msbuildProject": "../messenger/messenger.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "Microsoft.NETCore.App >= 2.0.0",
-      "messenger >= 1.0.0"
+      "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
   "packageFolders": {
@@ -686,9 +670,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/Manager/manager.csproj",
-      "projectName": "manager",
-      "projectPath": "/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/Manager/manager.csproj",
+      "projectUniqueName": "/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/Manager/Manager.csproj",
+      "projectName": "Manager",
+      "projectPath": "/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/Manager/Manager.csproj",
       "packagesPath": "/Users/wesleyburlani/.nuget/packages/",
       "outputPath": "/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/Manager/obj/",
       "projectStyle": "PackageReference",
@@ -706,11 +690,7 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {
-            "/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/messenger/messenger.csproj": {
-              "projectPath": "/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/messenger/messenger.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
