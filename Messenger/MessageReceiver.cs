@@ -29,10 +29,15 @@ namespace Messenger
 
             //---get the incoming data through a network stream---
             NetworkStream nwStream = client.GetStream();
+
             byte[] buffer = new byte[client.ReceiveBufferSize];
+            int bytesRead = nwStream.Read(buffer, 0, client.ReceiveBufferSize);
+
+        
+            Message message = ByteArrayParser.Deserialize<Message>(buffer, bytesRead);
             
-            Message message = ByteArrayParser.Deserialize<Message>(buffer);
-            
+            nwStream.Close();
+            listener.Stop();
             return message;
         }
     }

@@ -1,7 +1,10 @@
+using System;
+
 namespace Messenger
 {
-    public abstract class Message
+    [Serializable()]
+    public  class Message
     {
-        
+       public string text; 
     }
 }

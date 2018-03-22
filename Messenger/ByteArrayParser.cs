@@ -1,4 +1,5 @@
 using System.IO;
+using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Messenger
@@ -15,12 +16,11 @@ namespace Messenger
 			}
 		}
 
-		public static T Deserialize<T>(byte[] source)
+		public static T Deserialize<T>(byte[] source, int length)
 		{
-			using (var stream = new MemoryStream(source))
+			using (var stream = new MemoryStream(source.Take(length).ToArray()))
 			{
 				var formatter = new BinaryFormatter();
-				stream.Seek(0, SeekOrigin.Begin);
 				return (T)formatter.Deserialize(stream);
 			}
 		}
