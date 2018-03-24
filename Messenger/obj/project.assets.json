@@ -183,9 +183,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/messenger/messenger.csproj",
+      "projectUniqueName": "/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/Messenger/messenger.csproj",
       "projectName": "messenger",
-      "projectPath": "/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/messenger/messenger.csproj",
+      "projectPath": "/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/Messenger/messenger.csproj",
       "packagesPath": "/Users/wesleyburlani/.nuget/packages/",
       "outputPath": "/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/Messenger/obj/",
       "projectStyle": "PackageReference",

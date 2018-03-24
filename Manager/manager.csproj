@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Messenger\messenger.csproj" />
+    <ProjectReference Include="..\AddressConfig\AddressConfig.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
