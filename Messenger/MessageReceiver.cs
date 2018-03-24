@@ -17,7 +17,7 @@ namespace Messenger
             this.port = port;
         } 
 
-        public Message ReceiveMessage()
+        public Packet ReceivePacket()
         {
             IPAddress localAdd = IPAddress.Parse(this.ip);
             TcpListener listener = new TcpListener(localAdd, this.port);
@@ -33,7 +33,7 @@ namespace Messenger
             byte[] buffer = new byte[client.ReceiveBufferSize];
             int bytesRead = nwStream.Read(buffer, 0, client.ReceiveBufferSize);
 
-            Message message = ByteArrayParser.Deserialize<Message>(buffer, bytesRead);
+            Packet message = ByteArrayParser.Deserialize<Packet>(buffer, bytesRead);
             
             nwStream.Close();
             listener.Stop();

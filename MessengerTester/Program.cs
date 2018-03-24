@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Messenger;
+using Messenger.MessageModels;
 
 namespace MessengerTester
 {
@@ -11,7 +12,8 @@ namespace MessengerTester
             while(true)
             {
                 MessageReceiver receiver = new MessageReceiver("127.0.0.1", 7777);
-                Message message = receiver.ReceiveMessage();
+                Packet packet = receiver.ReceivePacket();
+                TestMessage message = (TestMessage)packet.message;
                 Console.WriteLine(message.text);
             }
         }
@@ -21,22 +23,21 @@ namespace MessengerTester
             while(true)
             {
                 MessageSender sender = new MessageSender("127.0.0.1", 7777);
-                Message message = new Message();
-                message.text = "teste";
-                sender.SendMessage(message);
+                Packet packet = new Packet();
+                packet.message = new TestMessage();
+                ((TestMessage)packet.message).text = "teste";
+                sender.SendPacket(packet);
             }
-
         }
 
         static void Main(string[] args)
         {
-            Task task = new Task(() => Receiver());
-            Task task2 = new Task(() => Sender());
-            task.Start();
-            task2.Start();
-            
-            task2.Wait();
-            task.Wait();
+            Task taskReceiver = new Task(() => Receiver());
+            Task taskSender = new Task(() => Sender());
+            taskReceiver.Start();
+            taskSender.Start();
+            taskSender.Wait();
+            taskReceiver.Wait();
         }
     }
 }

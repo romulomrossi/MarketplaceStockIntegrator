@@ -1,0 +1,156 @@
+<config>
+
+	<domain>https://ad-midea.a8e.net.br/</domain>
+	<storeNameId>Midea</storeNameId>
+	
+	<!-- (recommended) if not set, will use domain  -->
+	<imageDomain></imageDomain> 
+	
+	<!-- (optional) if not set, will get defautlt tag -->
+	<customKeyToGetPriceBase></customKeyToGetPriceBase>
+	<customKeyToGetPriceSale></customKeyToGetPriceSale>
+	
+	<!-- (optional) if not set, will get defautlt value, possibilities:[date,acklist] -->
+	<getProductUpdatesBy>date</getProductUpdatesBy>
+
+	<!-- (optional) if not set, will get defautlt value (ONLY FOR DATE UPDATE) -->
+	<daysAgoToUpdatePriceAndStock></daysAgoToUpdatePriceAndStock>
+	<getStockFromWhateverDate>false</getStockFromWhateverDate>
+    
+    <!-- (optional) if not set, will get defautlt value, possibilities:[date,acklist] -->
+	<getOrderUpdatesBy>date</getOrderUpdatesBy>
+
+	<!-- (optional) if not set, will get defautlt value (ONLY FOR DATE UPDATE) -->
+	<daysAgoToUpdateOrders></daysAgoToUpdateOrders>
+	
+	<auth>
+	
+		<clientId>clientapp</clientId>
+		<clientSecret>123456</clientSecret>
+		<grantType>password</grantType>
+		<scope>read+write</scope>
+		<userName>MIDEA\midea</userName>
+		<password>minafe3q2wbt9y8wq4eg</password>
+	</auth>
+	
+	<shippingMap> 
+	<!-- insert state on hub and shipping on system (hub = SP, system = Correios) --> 
+		<map>
+			<hub>default</hub>
+			<system>ECO</system>
+		</map>
+	</shippingMap>
+	
+	<warehouseIdMap>
+		<map>
+			<hub>default</hub>
+			<system>1</system>
+		</map>
+	</warehouseIdMap>
+	
+	<warehouseCnpjMap>
+		<map>
+			<hub>default</hub>
+			<system>09115657000179</system>
+		</map>
+	</warehouseCnpjMap>
+	
+	<logisticContractMap>
+		<map>
+			<hub>default</hub>
+			<system>ECO</system>
+		</map>
+	</logisticContractMap>
+	
+	<carrierCodeMap>
+        <map>
+            <system>1045</system>
+            <name>Transportadora Favorita</name>
+        </map>
+        <map>
+            <system>1044</system>
+            <name>Transportadora Pacifico</name>
+        </map>
+        <map>
+            <system>1043</system>
+            <name>Transportadora Direcional</name>
+        </map>
+        <map>
+            <system>1048</system>
+            <name>Transportadora Correios</name>
+        </map>
+        <map>
+            <system>1183</system>
+            <name>Transportadora Infracommerce</name>
+        </map>
+        <map>
+            <system>1049</system>
+            <name>Transportadora Vai Moto</name>
+        </map>
+        <map>
+            <hub>total</hub>
+            <system>1007</system>
+            <name>Transportadora Padrao Template</name>
+        </map>
+        <map>
+            <hub>total</hub>
+            <system>1047</system>
+            <name>Transportadora Total Express</name>
+        </map>
+        <map>
+            <system>1046</system>
+            <name>Transportadora Plimor</name>
+        </map>
+        <map>
+			<hub>default</hub>
+			<system></system>
+		</map>
+	</carrierCodeMap>
+
+	<saleChannelMap>
+		<map>
+			<hub>7</hub>
+			<system>AMZ</system>
+		</map>
+		<map>
+			<hub>3</hub>
+			<system>B2W</system>
+		</map>
+		<map>
+			<hub>41</hub>
+			<system>DFT</system>
+		</map>
+		<map>
+			<hub>74</hub>
+			<system>FST</system>
+		</map>
+		<map>
+			<hub>76</hub>
+			<system>MLU</system>
+		</map>
+		<map>
+			<hub>4</hub>
+			<system>MLV</system>
+		</map>
+		<map>
+			<hub>78</hub>
+			<system>RIC</system>
+		</map>
+		<map>
+			<hub>1</hub>
+			<system>WLM</system>
+		</map>
+		<map>
+			<hub>51</hub>
+			<system>NTS</system>
+		</map>
+		<map>
+			<hub>10</hub>
+			<system>BCP</system>
+		</map>
+		<map>
+			<hub>default</hub>
+			<system>INT</system>
+		</map>
+	</saleChannelMap>
+</config>
