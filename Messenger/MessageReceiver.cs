@@ -10,20 +10,20 @@ namespace Messenger
     {
         private string ip;
         private int port;
+
+         TcpListener listener;
         
         public MessageReceiver(string ip, int port)
         {
             this.ip = ip;
             this.port = port;
+            IPAddress localAdd = IPAddress.Parse(this.ip);
+            listener = new TcpListener(localAdd, this.port);
+            listener.Start();
         } 
 
         public Packet ReceivePacket()
         {
-            IPAddress localAdd = IPAddress.Parse(this.ip);
-            TcpListener listener = new TcpListener(localAdd, this.port);
-            Console.WriteLine("Waiting for messages...");
-            listener.Start();
-
             //---incoming client connected---
             TcpClient client = listener.AcceptTcpClient();
 
@@ -36,7 +36,6 @@ namespace Messenger
             Packet message = ByteArrayParser.Deserialize<Packet>(buffer, bytesRead);
             
             nwStream.Close();
-            listener.Stop();
             return message;
         }
     }

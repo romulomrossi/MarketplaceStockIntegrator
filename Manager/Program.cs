@@ -2,6 +2,7 @@
 using Messenger;
 using Messenger.MessageModels;
 using AddressConfig;
+using System.Threading.Tasks;
 
 namespace Manager
 {
@@ -17,16 +18,14 @@ namespace Manager
             while(true)
             {
                 Packet packet = receiver.ReceivePacket();
-                TestMessage message = (TestMessage)packet.message;
-                Console.WriteLine(message.text);
+                IManagerPacketProcessor processor = ManagerPacketProcessor.FactoryProcessor(packet);
+                Task.Run(() => processor.ProcessMessage(packet));
             }
         } 
-
 
         static void Main(string[] args)
         {
             StartReceiverThread();
-            Console.WriteLine("Hello World!");
         }
     }
 }

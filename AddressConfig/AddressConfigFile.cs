@@ -2,6 +2,7 @@ namespace AddressConfig
 {
     public class AddressConfigFile
     {
-        public AddressPortPair manager;
+        public AddressPair manager;
+        public AddressPair databaseAPI;
     }
 }

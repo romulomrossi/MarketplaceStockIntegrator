@@ -14,9 +14,14 @@ namespace AddressConfig
             config = JsonConvert.DeserializeObject<AddressConfigFile>(file);
         }
 
-        public AddressPortPair GetManagerAddress()
+        public AddressPair GetManagerAddress()
         {
            return config.manager;
+        }
+
+        public AddressPair GetDatabaseAPIAddress()
+        {
+            return config.databaseAPI;
         }
     }
 }

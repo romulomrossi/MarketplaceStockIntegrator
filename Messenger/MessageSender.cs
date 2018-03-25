@@ -30,7 +30,6 @@ namespace Messenger
                     client = new TcpClient(this.ip, this.port);
                     NetworkStream networkStream = client.GetStream();
                     byte[] bytesToSend = ByteArrayParser.Serialize(packet);
-                    Console.WriteLine("Sending message...");
                     networkStream.Write(bytesToSend, 0, bytesToSend.Length);
                     client.Close();
                     break;

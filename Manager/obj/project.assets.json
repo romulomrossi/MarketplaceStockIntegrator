@@ -742,9 +742,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/Manager/manager.csproj",
-      "projectName": "manager",
-      "projectPath": "/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/Manager/manager.csproj",
+      "projectUniqueName": "/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/Manager/Manager.csproj",
+      "projectName": "Manager",
+      "projectPath": "/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/Manager/Manager.csproj",
       "packagesPath": "/Users/wesleyburlani/.nuget/packages/",
       "outputPath": "/Users/wesleyburlani/Google Drive/uffs/2018.1/ComputacaoDistribuida/work/Manager/obj/",
       "projectStyle": "PackageReference",
